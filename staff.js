@@ -8,7 +8,13 @@ if (document.getElementById('loginForm')) {
         // Retrieve user data from localStorage (for demo purposes)
         const user = JSON.parse(localStorage.getItem('user'));
 
-        if (user && user.staffId === staffId && user.password === password) {
+        // Default credentials
+        const defaultUser = { staffId: 'S001', password: 'abc123456' };
+
+        // Check if user exists in localStorage, otherwise use default credentials
+        const validUser = user || defaultUser;
+
+        if (validUser.staffId === staffId && validUser.password === password) {
             alert("Login successful!");
             window.location.href = "staff_homepage.html"; // Redirect to home page
         } else {

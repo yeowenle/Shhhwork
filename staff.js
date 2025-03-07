@@ -23,4 +23,32 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // Handle register form submission
+if (document.getElementById('registerForm')) {
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const staffId = document.getElementById('staffId').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const confirmPassword = document.getElementById('confirmPassword').value.trim();
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        // Simple password length validation
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long!");
+            return;
+        }
+
+        // Save user data to localStorage (for demo purposes)
+        const user = { staffId, password };
+        localStorage.setItem('user', JSON.stringify(user));
+
+        alert("Registration successful! You can now login.");
+        window.location.href = "index.html"; // Redirect to login page
+    });
+}
 });

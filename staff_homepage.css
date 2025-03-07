@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.website-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Trending Posts Section */
+.trending {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.post strong {
+    color: #007bff;
+}
+
+/* Post Form */
+.post-form {
+    margin-top: 30px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+.post-options {
+    margin-bottom: 10px;
+}
+
+.company-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.post-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-btn:hover {
+    background-color: #218838;
+}
+
+/* Search Results Section */
+#searchResultsSection {
+    display: none;
+}
+
+#searchResultsSection .search-container {
+    margin-bottom: 20px;
+}
+
+#searchResultsSection .trending {
+    margin-top: 20px;
+}
+
+/* Auth Links */
+.auth-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Button */
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #dc3545; /* Red color for logout */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

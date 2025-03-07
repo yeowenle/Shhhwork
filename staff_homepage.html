@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Homepage</title>
+    <link rel="stylesheet" href="staff_homepage.css">
+</head>
+<body>
+    <!-- Header with Logout Button -->
+    <header>
+        <div class="logo-container">
+            <a href="#" onclick="showIndex()">
+                <img src="images/logo.png" alt="Website Logo" class="website-logo">
+            </a>
+        </div>
+        <button class="logout-btn" onclick="logout()">Log Out</button>
+    </header>
+
+    <!-- Index Section -->
+    <div id="indexSection" class="container">
+        <div class="search-container">
+            <input type="text" id="searchQuery" class="search-bar" placeholder="Search company or topics...">
+            <button class="search-btn" onclick="performSearch()">Search</button>
+        </div>
+        <h2 class="section-title">Post</h2>
+        <div class="trending" id="trendingPosts">
+            <!-- Existing posts will be dynamically inserted here -->
+        </div>
+        <div class="post-form">
+            <div class="user-info">
+                <img src="images/profile.webp" alt="User" class="user-avatar">
+                <strong>Anonymous</strong>
+            </div>
+            <textarea id="postInput" class="post-input" placeholder="Write your opinions here.."></textarea>
+            <div class="post-options">
+                <select id="companyDropdown" class="company-dropdown">
+                    <option>AIA Insurance</option> <!-- Only AIA Insurance is available -->
+                </select>
+            </div>
+            <button class="post-btn" onclick="submitPost()">Post</button>
+        </div>
+    </div>
+
+    <!-- Search Results Section -->
+    <div id="searchResultsSection" class="container" style="display: none;">
+        <div class="logo-container">
+            <a href="#" onclick="showIndex()">
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchQueryResults" class="search-bar" placeholder="Search company or topics...">
+            <button class="search-btn" onclick="performSearchResults()">Search</button>
+        </div>
+        <h2 class="section-title">Search Results</h2>
+        <div id="searchResults" class="trending">
+            <!-- Search results will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript File -->
+    <script src="staff_homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    width: 50%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.website-logo {
+    width: 100px; /* Reduced from 150px */
+    height: auto;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.search-btn:hover {
+    background: #125ab7;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Trending Posts */
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post {
+    background: #eef2f7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.post-footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.comment-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.comment-content {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+.comment-content strong {
+    color: #000;
+}
+
+/* Add Comment Section */
+.add-comment {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-comment textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    resize: none;
+    background: white;
+}
+
+.add-comment button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.add-comment button:hover {
+    background: #125ab7;
+}
+
+/* Post Form */
+.post-form {
+    background: #ffffff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.post-input {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+.post-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.company-dropdown {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    font-size: 14px;
+    cursor: pointer;
+    width: 120px;
+}
+
+/* Post Button */
+.post-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.post-btn:hover {
+    background: #125ab7;
+}

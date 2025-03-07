@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.website-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Trending Posts Section */
+.trending {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.post strong {
+    color: #007bff;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.comment-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.comment-content {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+.comment-content strong {
+    color: #000;
+}
+
+/* Add Comment Section */
+.add-comment {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-comment textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    resize: none;
+    background: white;
+}
+
+.add-comment button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.add-comment button:hover {
+    background: #125ab7;
+}
+
+/* Search Results Section */
+#searchResultsSection {
+    display: none;
+}
+
+#searchResultsSection .search-container {
+    margin-bottom: 20px;
+}
+
+#searchResultsSection .trending {
+    margin-top: 20px;
+}
+
+.like-btn {
+    cursor: pointer;
+}
+
+.comment-btn {
+    cursor: pointer;
+}
+
+/* Logout Button */
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #dc3545; /* Red color for logout */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

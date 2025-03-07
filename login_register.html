@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="login_register.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <div id="loginSection" class="container">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Website Logo" class="website-logo">
+        </div>
+        <h2 class="section-title">Login</h2>
+        <form id="loginForm" class="auth-form">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" required>
+            </div>
+            <button type="submit" class="auth-btn">Login</button>
+        </form>
+        <p class="auth-link">Don't have an account? <a href="#" onclick="showRegister()">Register here</a></p>
+    </div>
+
+    <!-- Register Section -->
+    <div id="registerSection" class="container" style="display: none;">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Website Logo" class="website-logo">
+        </div>
+        <h2 class="section-title">Register</h2>
+        <form id="registerForm" class="auth-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit" class="auth-btn">Register</button>
+        </form>
+        <p class="auth-link">Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+    </div>
+
+    <!-- Link to External JavaScript File -->
+    <script src="login_register.js"></script>
+</body>
+</html>
